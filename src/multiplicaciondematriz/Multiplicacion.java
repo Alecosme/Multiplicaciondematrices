@@ -8,6 +8,9 @@ public class Multiplicacion {
     private int sizeF;
     private int sizeC;
     private int matrizresult[][]=new int [3][3];
+    private int posicion00, posicion01, posicion02;
+    private int posicion10, posicion11, posicion12;
+    private int posicion20, posicion21, posicion22;
 
     public Multiplicacion(int[][] matrizA, int[][] matrizB, int sizeF, int sizeC) {
         this.matrizA = matrizA;
@@ -15,12 +18,19 @@ public class Multiplicacion {
         this.sizeF = sizeF;
         this.sizeC = sizeC;
     }
-    public int  getMatriz(){
-    
-    return matrizA[0][2];
-    }
+   
     public void product(){
+        for (int i = 0; i < 3; i++) {
+            
+                int temporal =0;
+                this.posicion00 += (this.matrizA[0][i])*(this.matrizB[i][0]);  
+        }
         
+ 
+    }
+     public int   getMatriz(){
+    
+    return this.posicion00;
     }
     
     
