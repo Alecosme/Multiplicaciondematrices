@@ -17,9 +17,28 @@ public class Proceso1 extends Thread  {
             this.posicion10 += (this.matrizA[1][i])*(this.matrizB[i][0]);
             
         }
+        
+        for (int i = 0; i < 3; i++) {
+            this.posicion11 += (this.matrizA[1][i])*(this.matrizB[i][1]);
+            
+        }
+        for (int i = 0; i < 3; i++) {
+            this.posicion12 += (this.matrizA[1][i])*(this.matrizB[i][2]);
+            
+        }
+        
     }
-    public int getnumber (){
+    public int getPosition10 (){
     return this.posicion10;
+    }
+    
+    public int getPosition11 (){
+    
+    return this.posicion11;
+    }
+    
+    public int getPosition12(){
+    return this.posicion12;
     }
     
 }

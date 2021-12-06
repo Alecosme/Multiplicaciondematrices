@@ -25,12 +25,32 @@ public class Multiplicacion {
                 int temporal =0;
                 this.posicion00 += (this.matrizA[0][i])*(this.matrizB[i][0]);  
         }
+          for (int i = 0; i < 3; i++) {
+            
+                int temporal =0;
+                this.posicion01 += (this.matrizA[0][i])*(this.matrizB[i][1]);  
+        }
+            for (int i = 0; i < 3; i++) {
+            
+                int temporal =0;
+                this.posicion02 += (this.matrizA[0][i])*(this.matrizB[i][2]);  
+        }
         
  
     }
-     public int   getMatriz(){
+     public int   getPosition00(){
     
     return this.posicion00;
+    }
+     
+     public int   getPosition01(){
+    
+    return this.posicion01;
+    }
+     
+     public int   getPosition02(){
+    
+    return this.posicion02;
     }
     
     
