@@ -12,11 +12,10 @@ public class Multiplicacion {
     private int posicion10, posicion11, posicion12;
     private int posicion20, posicion21, posicion22;
 
-    public Multiplicacion(int[][] matrizA, int[][] matrizB, int sizeF, int sizeC) {
+    public Multiplicacion(int[][] matrizA, int[][] matrizB) {
         this.matrizA = matrizA;
         this.matrizB = matrizB;
-        this.sizeF = sizeF;
-        this.sizeC = sizeC;
+        
     }
    
     public void product(){
